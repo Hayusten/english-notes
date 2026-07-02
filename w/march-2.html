@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>March · Set 2 — Hayusten English Notes</title>
+<style>
+:root{
+  --navy:#0e2a49; --navy-2:#124d82; --gold:#f7931e; --gold-light:#fbbb73;
+  --cream:#FBF7EF; --cream-2:#F3ECDD; --ink:#1a2433; --line:#dcd5c4; --muted:#707893;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--cream); color:var(--ink);
+}
+.topbar{
+  background:linear-gradient(135deg,var(--navy) 0%, var(--navy-2) 100%);
+  color:#fff; padding:22px 20px 26px; text-align:center;
+}
+.topbar img{height:34px; margin-bottom:10px;}
+.topbar h1{font-size:19px; margin:4px 0 2px; font-weight:700; letter-spacing:0.5px;}
+.topbar p{font-size:12.5px; color:var(--gold-light); margin:0; letter-spacing:0.5px; text-transform:uppercase;}
+.wrap{max-width:480px; margin:0 auto; padding:18px 16px 40px;}
+.card{
+  background:#fff; border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:14px; border-left:4px solid var(--gold);
+}
+.card .row1{display:flex; align-items:baseline; gap:8px; margin-bottom:6px;}
+.word{font-size:20px; font-weight:800; color:var(--navy);}
+.pos{font-size:12px; font-style:italic; color:var(--muted);}
+.def{font-size:14.5px; color:#333; line-height:1.45; margin-bottom:6px;}
+.ex{font-size:13.5px; font-style:italic; color:#555; line-height:1.4; margin-bottom:10px;}
+.pt{
+  display:flex; align-items:center; gap:8px;
+  background:var(--cream-2); border-radius:8px; padding:8px 10px;
+  font-size:14px; color:var(--navy); font-weight:600;
+}
+.pt .flag{font-size:15px;}
+.listen-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  margin-top:10px; background:var(--navy); color:#fff; border:none;
+  padding:9px 14px; border-radius:30px; font-size:13.5px; font-weight:600;
+  cursor:pointer;
+}
+.listen-btn:active{ background:var(--navy-2); }
+.listen-btn svg{width:14px; height:14px; fill:#fff;}
+.footer{
+  text-align:center; margin-top:30px; font-size:11.5px; color:var(--muted);
+}
+.footer a{color:var(--navy); text-decoration:none; font-weight:600;}
+.nav{display:flex; justify-content:space-between; max-width:480px; margin:0 auto; padding:0 16px;}
+.nav a{font-size:12.5px; color:var(--navy); text-decoration:none; font-weight:600;}
+.badge{
+  display:inline-block; background:var(--gold); color:#fff; font-size:11px; font-weight:700;
+  padding:3px 9px; border-radius:20px; margin-bottom:8px; letter-spacing:0.4px;
+}
+.hint{ text-align:center; font-size:12px; color:var(--muted); margin:-6px 0 16px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>HAYUSTEN ENGLISH NOTES</h1>
+    <p>March &middot; Set 2</p>
+  </div>
+  <div class="wrap">
+    <div class="hint">Tap <b>Listen</b> to hear the pronunciation</div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Grasp</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To understand something fully.</div>
+      <div class="ex">&ldquo;It took a while to grasp the new concept.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Compreender, captar</div>
+      <button class="listen-btn" onclick="speak('Grasp', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Humble</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Not proud; modest about one&#x27;s abilities.</div>
+      <div class="ex">&ldquo;Despite his success, he remained humble.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Humilde</div>
+      <button class="listen-btn" onclick="speak('Humble', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Immerse</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To involve deeply in an activity.</div>
+      <div class="ex">&ldquo;Immerse yourself in English to learn faster.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Imergir, mergulhar</div>
+      <button class="listen-btn" onclick="speak('Immerse', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Justify</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To give a good reason for something.</div>
+      <div class="ex">&ldquo;She justified her choice with clear arguments.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Justificar</div>
+      <button class="listen-btn" onclick="speak('Justify', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Leverage</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To use something to gain an advantage.</div>
+      <div class="ex">&ldquo;The company leveraged social media to grow.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Aproveitar, alavancar</div>
+      <button class="listen-btn" onclick="speak('Leverage', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Meaningful</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Having real purpose or importance.</div>
+      <div class="ex">&ldquo;He wanted a meaningful career, not just a job.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Significativo</div>
+      <button class="listen-btn" onclick="speak('Meaningful', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    
+    <div class="nav">
+      <a href="march-1.html">&larr; Previous</a>
+      <a href="../index.html">All weeks</a>
+      <a href="march-3.html">Next &rarr;</a>
+    </div>
+    
+    <div class="footer">Hayusten Lda &middot; <a href="../index.html">hayusten.github.io/english-notes</a></div>
+  </div>
+  <script>
+function speak(text, btn) {
+  if (!('speechSynthesis' in window)) {
+    alert('Pronunciation is not supported on this browser.');
+    return;
+  }
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = 0.92;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utter);
+}
+</script>
+</body>
+</html>

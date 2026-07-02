@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>October · Set 1 — Hayusten English Notes</title>
+<style>
+:root{
+  --navy:#0e2a49; --navy-2:#124d82; --gold:#f7931e; --gold-light:#fbbb73;
+  --cream:#FBF7EF; --cream-2:#F3ECDD; --ink:#1a2433; --line:#dcd5c4; --muted:#707893;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--cream); color:var(--ink);
+}
+.topbar{
+  background:linear-gradient(135deg,var(--navy) 0%, var(--navy-2) 100%);
+  color:#fff; padding:22px 20px 26px; text-align:center;
+}
+.topbar img{height:34px; margin-bottom:10px;}
+.topbar h1{font-size:19px; margin:4px 0 2px; font-weight:700; letter-spacing:0.5px;}
+.topbar p{font-size:12.5px; color:var(--gold-light); margin:0; letter-spacing:0.5px; text-transform:uppercase;}
+.wrap{max-width:480px; margin:0 auto; padding:18px 16px 40px;}
+.card{
+  background:#fff; border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:14px; border-left:4px solid var(--gold);
+}
+.card .row1{display:flex; align-items:baseline; gap:8px; margin-bottom:6px;}
+.word{font-size:20px; font-weight:800; color:var(--navy);}
+.pos{font-size:12px; font-style:italic; color:var(--muted);}
+.def{font-size:14.5px; color:#333; line-height:1.45; margin-bottom:6px;}
+.ex{font-size:13.5px; font-style:italic; color:#555; line-height:1.4; margin-bottom:10px;}
+.pt{
+  display:flex; align-items:center; gap:8px;
+  background:var(--cream-2); border-radius:8px; padding:8px 10px;
+  font-size:14px; color:var(--navy); font-weight:600;
+}
+.pt .flag{font-size:15px;}
+.listen-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  margin-top:10px; background:var(--navy); color:#fff; border:none;
+  padding:9px 14px; border-radius:30px; font-size:13.5px; font-weight:600;
+  cursor:pointer;
+}
+.listen-btn:active{ background:var(--navy-2); }
+.listen-btn svg{width:14px; height:14px; fill:#fff;}
+.footer{
+  text-align:center; margin-top:30px; font-size:11.5px; color:var(--muted);
+}
+.footer a{color:var(--navy); text-decoration:none; font-weight:600;}
+.nav{display:flex; justify-content:space-between; max-width:480px; margin:0 auto; padding:0 16px;}
+.nav a{font-size:12.5px; color:var(--navy); text-decoration:none; font-weight:600;}
+.badge{
+  display:inline-block; background:var(--gold); color:#fff; font-size:11px; font-weight:700;
+  padding:3px 9px; border-radius:20px; margin-bottom:8px; letter-spacing:0.4px;
+}
+.hint{ text-align:center; font-size:12px; color:var(--muted); margin:-6px 0 16px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>HAYUSTEN ENGLISH NOTES</h1>
+    <p>October &middot; Set 1</p>
+  </div>
+  <div class="wrap">
+    <div class="hint">Tap <b>Listen</b> to hear the pronunciation</div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Meticulous</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Very careful and precise about details.</div>
+      <div class="ex">&ldquo;She is meticulous when checking her work.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Meticuloso</div>
+      <button class="listen-btn" onclick="speak('Meticulous', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Novel</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">New and original; not seen before.</div>
+      <div class="ex">&ldquo;They came up with a novel solution to the problem.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Inovador, original</div>
+      <button class="listen-btn" onclick="speak('Novel', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Outcome</span>
+        <span class="pos">n.</span>
+      </div>
+      <div class="def">The result of an action or process.</div>
+      <div class="ex">&ldquo;The outcome of the meeting was positive.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Resultado</div>
+      <button class="listen-btn" onclick="speak('Outcome', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Prevail</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To win or succeed despite difficulty.</div>
+      <div class="ex">&ldquo;In the end, patience prevailed.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Prevalecer</div>
+      <button class="listen-btn" onclick="speak('Prevail', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Rigorous</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Thorough, strict, and careful.</div>
+      <div class="ex">&ldquo;The training program is rigorous but effective.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Rigoroso</div>
+      <button class="listen-btn" onclick="speak('Rigorous', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Substantiate</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To provide evidence to support a claim.</div>
+      <div class="ex">&ldquo;She substantiated her argument with clear data.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Comprovar, fundamentar</div>
+      <button class="listen-btn" onclick="speak('Substantiate', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    
+    <div class="nav">
+      <a href="september-3.html">&larr; Previous</a>
+      <a href="../index.html">All weeks</a>
+      <a href="october-2.html">Next &rarr;</a>
+    </div>
+    
+    <div class="footer">Hayusten Lda &middot; <a href="../index.html">hayusten.github.io/english-notes</a></div>
+  </div>
+  <script>
+function speak(text, btn) {
+  if (!('speechSynthesis' in window)) {
+    alert('Pronunciation is not supported on this browser.');
+    return;
+  }
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = 0.92;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utter);
+}
+</script>
+</body>
+</html>
