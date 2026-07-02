@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>January · Set 1 — Hayusten English Notes</title>
+<style>
+:root{
+  --navy:#0e2a49; --navy-2:#124d82; --gold:#f7931e; --gold-light:#fbbb73;
+  --cream:#FBF7EF; --cream-2:#F3ECDD; --ink:#1a2433; --line:#dcd5c4; --muted:#707893;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--cream); color:var(--ink);
+}
+.topbar{
+  background:linear-gradient(135deg,var(--navy) 0%, var(--navy-2) 100%);
+  color:#fff; padding:22px 20px 26px; text-align:center;
+}
+.topbar img{height:34px; margin-bottom:10px; display:inline-block;}
+.topbar h1{font-size:19px; margin:4px 0 2px; font-weight:700; letter-spacing:0.5px;}
+.topbar p{font-size:12.5px; color:var(--gold-light); margin:0; letter-spacing:0.5px; text-transform:uppercase;}
+.legal-foot{
+  text-align:center; margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  font-size:10.5px; color:var(--muted); line-height:1.6;
+}
+.legal-foot b{ color:var(--navy); }
+.legal-foot a{ color:var(--gold); font-weight:700; text-decoration:none; }
+.wrap{max-width:480px; margin:0 auto; padding:18px 16px 40px;}
+.card{
+  background:#fff; border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:14px; border-left:4px solid var(--gold);
+}
+.card .row1{display:flex; align-items:baseline; gap:8px; margin-bottom:6px;}
+.word{font-size:20px; font-weight:800; color:var(--navy);}
+.pos{font-size:12px; font-style:italic; color:var(--muted);}
+.def{font-size:14.5px; color:#333; line-height:1.45; margin-bottom:6px;}
+.ex{font-size:13.5px; font-style:italic; color:#555; line-height:1.4; margin-bottom:10px;}
+.pt{
+  display:flex; align-items:center; gap:8px;
+  background:var(--cream-2); border-radius:8px; padding:8px 10px;
+  font-size:14px; color:var(--navy); font-weight:600;
+}
+.pt .flag{font-size:15px;}
+.listen-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  margin-top:10px; background:var(--navy); color:#fff; border:none;
+  padding:9px 14px; border-radius:30px; font-size:13.5px; font-weight:600;
+  cursor:pointer;
+}
+.listen-btn:active{ background:var(--navy-2); }
+.listen-btn svg{width:14px; height:14px; fill:#fff;}
+.footer{
+  text-align:center; margin-top:30px; font-size:11.5px; color:var(--muted);
+}
+.footer a{color:var(--navy); text-decoration:none; font-weight:600;}
+.nav{display:flex; justify-content:space-between; max-width:480px; margin:0 auto; padding:0 16px;}
+.nav a{font-size:12.5px; color:var(--navy); text-decoration:none; font-weight:600;}
+.badge{
+  display:inline-block; background:var(--gold); color:#fff; font-size:11px; font-weight:700;
+  padding:3px 9px; border-radius:20px; margin-bottom:8px; letter-spacing:0.4px;
+}
+.hint{ text-align:center; font-size:12px; color:var(--muted); margin:-6px 0 16px; }
+
+/* ---- Copyright modal ---- */
+.cw-overlay{
+  position:fixed; inset:0; background:rgba(14,42,73,0.72);
+  display:flex; align-items:center; justify-content:center;
+  z-index:9999; padding:20px; backdrop-filter: blur(2px);
+}
+.cw-modal{
+  background:#fff; border-radius:14px; max-width:360px; width:100%;
+  padding:26px 24px 22px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.35);
+}
+.cw-modal .cw-mark{ width:34px; height:34px; margin:0 auto 12px; display:block; }
+.cw-modal h2{ font-size:15.5px; color:var(--navy); margin:0 0 10px; font-weight:800; }
+.cw-modal p{ font-size:12.8px; color:#555; line-height:1.55; margin:0 0 6px; }
+.cw-modal a{ color:var(--gold); font-weight:700; text-decoration:none; }
+.cw-modal button{
+  margin-top:16px; background:var(--navy); color:#fff; border:none;
+  padding:10px 26px; border-radius:24px; font-size:13.5px; font-weight:700; cursor:pointer;
+}
+.cw-modal .cw-small{ font-size:10.8px; color:var(--muted); margin-top:10px; }
+
+/* ---- Newsletter banner (footer link) ---- */
+.nl-banner{
+  display:block; text-align:center; background:var(--cream-2); border:1px dashed var(--gold);
+  border-radius:10px; padding:10px 12px; font-size:12px; color:var(--navy); font-weight:600;
+  text-decoration:none; margin:16px 0;
+}
+.nl-banner span{ color:var(--gold); font-weight:800; }
+</style>
+</head>
+<body>
+  
+<div class="cw-overlay" id="cwOverlay">
+  <div class="cw-modal">
+    <img class="cw-mark" src="../assets/symbol.png">
+    <h2>&copy; Hayusten Lda &mdash; All Rights Reserved</h2>
+    <p>This content (words, definitions, translations and audio) is the exclusive property of <b>Hayusten Lda</b> and is provided for personal learning use only.</p>
+    <p>Questions or permissions: <a href="mailto:info@hayusten.com">info@hayusten.com</a></p>
+    <button onclick="closeCwModal()">I Understand</button>
+    <div class="cw-small">This message is shown once per device.</div>
+  </div>
+</div>
+
+  <div class="topbar">
+    <img src="../assets/symbol.png" alt="Hayusten">
+    <h1>HAYUSTEN ENGLISH NOTES</h1>
+    <p>January &middot; Set 1</p>
+  </div>
+  <div class="wrap">
+    <div class="hint">Tap <b>Listen</b> to hear the pronunciation</div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Achieve</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To successfully complete or reach a goal.</div>
+      <div class="ex">&ldquo;She worked hard to achieve her dream job.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Alcançar, conseguir</div>
+      <button class="listen-btn" onclick="speak('Achieve', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Benefit</span>
+        <span class="pos">n.</span>
+      </div>
+      <div class="def">An advantage or profit gained from something.</div>
+      <div class="ex">&ldquo;Regular exercise has many benefits.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Benefício</div>
+      <button class="listen-btn" onclick="speak('Benefit', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Candid</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Honest and direct, without hiding the truth.</div>
+      <div class="ex">&ldquo;He gave a candid opinion about the plan.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Sincero, franco</div>
+      <button class="listen-btn" onclick="speak('Candid', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Diligent</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Showing careful and steady effort.</div>
+      <div class="ex">&ldquo;She is a diligent student who never misses class.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Diligente, aplicado</div>
+      <button class="listen-btn" onclick="speak('Diligent', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Enhance</span>
+        <span class="pos">v.</span>
+      </div>
+      <div class="def">To improve the quality or value of something.</div>
+      <div class="ex">&ldquo;New lighting can enhance the mood of a room.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Melhorar, realçar</div>
+      <button class="listen-btn" onclick="speak('Enhance', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    <div class="card">
+      <div class="row1">
+        <span class="word">Frequent</span>
+        <span class="pos">adj.</span>
+      </div>
+      <div class="def">Happening often or regularly.</div>
+      <div class="ex">&ldquo;He makes frequent trips to the city.&rdquo;</div>
+      <div class="pt"><span class="flag">🇵🇹</span> Frequente</div>
+      <button class="listen-btn" onclick="speak('Frequent', this)">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1-3.29-2.5-4.03v8.05c1.5-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        Listen
+      </button>
+    </div>
+    
+    
+    <div class="nav">
+      <a href="december-3.html">&larr; Previous</a>
+      <a href="../index.html">All weeks</a>
+      <a href="january-2.html">Next &rarr;</a>
+    </div>
+    
+    <a class="nl-banner" href="../subscribe.html"><span>&#9993;</span> Want weekly word tips by email? (optional)</a>
+    <div class="legal-foot">
+      &copy; <b>Hayusten Lda</b> &mdash; Unauthorized reproduction of this material is prohibited.<br>
+      All rights reserved. More information: <a href="mailto:info@hayusten.com">info@hayusten.com</a>
+    </div>
+    <div class="footer">Hayusten Lda &middot; <a href="../index.html">hayusten.github.io/english-notes</a></div>
+  </div>
+  <script>
+function speak(text, btn) {
+  if (!('speechSynthesis' in window)) {
+    alert('Pronunciation is not supported on this browser.');
+    return;
+  }
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = 0.92;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utter);
+}
+
+function closeCwModal(){
+  const el = document.getElementById('cwOverlay');
+  if (el) el.style.display = 'none';
+  try { localStorage.setItem('hayusten_copyright_ack', '1'); } catch(e) {}
+}
+(function(){
+  try {
+    if (localStorage.getItem('hayusten_copyright_ack') === '1') {
+      document.addEventListener('DOMContentLoaded', function(){
+        const el = document.getElementById('cwOverlay');
+        if (el) el.style.display = 'none';
+      });
+    }
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>
